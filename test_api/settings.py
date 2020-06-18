@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
-import os
+import os 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +25,7 @@ SECRET_KEY = '^e7^-fyn_pwobq1-dqn3-$webto$8c$p!+qrys%manw!()*7)k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['z3hdro.pythonanywhere.com']
 
 
 # Application definition
@@ -76,12 +76,11 @@ WSGI_APPLICATION = 'test_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'test_db',
-        'USER': 'test_user',
-        'PASSWORD': 'password',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'z3hdro$test_db',
+        'USER': 'z3hdro',
+        'PASSWORD': 'Wot20152016kz',
+        'HOST': 'z3hdro.mysql.pythonanywhere-services.com',
     }
 }
 
