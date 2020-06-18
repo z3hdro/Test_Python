@@ -5,9 +5,9 @@ from django.http import JsonResponse
 import hashlib
 import time
 from marvelapi.models import Rus
+from marvelapi.config import private_key, public_key
 
-public_key = '8552318ccf9cea547290fc7f96774413'
-private_key = 'b84fe03cd3e80f7611eefed856733e8d555e5ab9'
+
 ts = str(time.time())
 m = hashlib.md5((ts+private_key+public_key).encode('utf-8')).hexdigest()
 
